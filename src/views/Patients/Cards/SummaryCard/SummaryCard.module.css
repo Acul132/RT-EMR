@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+.picture {
+    margin-left: 20px;
+    min-width: 206px;
+    height: 240px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    background-size: cover !important;
+    background-position: center center !important;
+
+}
+
+.textBox {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    color: #1e1f22;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 65px;
+    margin-right: 20px;
+}
+
+.textBox > div {
+    margin: 4.5px 0;
+}
+
+.textBox > div > span {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    color: #768191;
+
+}
+
+.gender {
+    text-transform: capitalize;
+}

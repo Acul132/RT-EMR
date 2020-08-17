@@ -1,0 +1,58 @@
+.MenuContainer {
+    min-width: 200px;
+    background: white;
+    box-shadow: 0 20px 60px 0 rgba(0,0,0,.15);
+    display: flex;
+    transform-origin: bottom left;
+    border-radius: 12px;
+    opacity: 0;
+    transition: transform .2s,opacity .2s,-webkit-transform .2s;
+}
+
+.MenuList {
+    padding: 0;
+    width: 100%;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.MenuItem {
+    height: 40px;
+    padding: 0 26px;
+    cursor: pointer;
+
+
+}
+
+.MenuItem:hover > div > span {
+    color: #2e3a49;
+
+}
+
+.MenuItem > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.MenuItem > div > :first-child {
+    margin-right: 16px;
+    color: #768191;
+}
+
+.MenuItem:hover > div > :first-child {
+    color: #2e3a49;
+
+}
+
+.MenuItem > div > span {
+    color: #768191;
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.divider {
+    border-bottom: 1px solid #eceff5;
+    margin: 10px 0;
+}

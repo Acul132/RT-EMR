@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    margin: 10px 0;
+}
+
+.container.error  input, .container.error textarea {
+    border-color: #f15a5c
+}
+
+.container > label {
+    display: block;
+    color: #a3aab4;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.container input {
+    width: 250px;
+    background: #fff;
+    height: 40px;
+    border: 1px solid #c6c8ce;
+    border-radius: 6px;
+    padding: 11px 15px;
+    font-family: "Fira Sans",sans-serif;
+    font-size: 14px;
+    color: #9ca6b4;
+    outline: 0;
+    appearance: none;
+    vertical-align: middle;
+}
+
+.container textarea {
+    max-width: 100%;
+    background: #fff;
+    border: 1px solid #c6c8ce;
+    border-radius: 6px;
+    padding: 11px 15px;
+    font-family: "Fira Sans",sans-serif;
+    font-size: 14px;
+    color: #9ca6b4;
+    outline: 0;
+    appearance: none;
+    vertical-align: middle;
+}
+
+.container > span {
+    font-size: 12px;
+    color: #f15a5c;
+    line-height: 1.2;
+    margin-top: 8px;
+
+}
+
+.dynamicDrop {
+    position: absolute;
+    bottom: 48px;
+    background: white;
+    border-radius: 6px;
+    border: 1px #cccccc solid;
+    width: 250px;
+    box-shadow: 2px 2px 4px #cccccc90;
+    
+}
+
+
+
+.dynamicDrop ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.dynamicDrop ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dynamicDrop ul li:hover {
+    background: #2B50ED40;
+}
+
+.dyanmicContainer {
+    position: relative;
+}

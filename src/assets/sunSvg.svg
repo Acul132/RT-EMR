@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="457" height="457" viewBox="0 0 457 457">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-sun);
+      }
+
+      .cls-2 {
+        filter: url(#Ellipse_7);
+      }
+    </style>
+    <linearGradient id="linear-gradient-sun" x1="0.79" x2="0.385" y2="1.057" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fee123"/>
+      <stop offset="1" stop-color="#ffbc00"/>
+    </linearGradient>
+    <filter id="Ellipse_7" x="0" y="0" width="457" height="457" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#fee123" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <circle id="Ellipse_7-2" data-name="Ellipse 7" class="cls-1" cx="183.5" cy="183.5" r="183.5" transform="translate(42 42)"/>
+  </g>
+</svg>

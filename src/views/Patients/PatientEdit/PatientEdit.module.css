@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: white;
+    padding: 20px 30px;
+    font-family: "Fira Sans";
+    font-weight: normal;
+    font-size: 21px;
+    text-align: left;
+    color: #1e1f22;
+    display: flex;
+    justify-content: space-between;
+}
+
+.root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.editContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}

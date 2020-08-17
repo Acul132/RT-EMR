@@ -1,0 +1,64 @@
+.SidebarContainer {
+    width: 250px;
+    position: fixed;
+    left: 70px;
+    list-style: none;
+    height: 100%;
+    padding: 0;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.SidebarContainer::-webkit-scrollbar {
+    width: 0px;
+}
+
+.SidebarHeader {
+    height: 45px;
+    padding-left: 30px;
+}
+
+.SidebarHeader > div {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    height: 100%;
+    font-size: 11px;
+    text-align: left;
+    color: #b6bfcc;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.SidebarWrapper {
+    position: relative;
+    margin-left: 250px;
+    height: 100%;
+
+}
+
+.SidebarLink {
+    height: 45px;
+    padding-left: 30px;
+}
+.SidebarLink > :first-child {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.SidebarLink > :first-child > :first-child {
+    font-size: 16px;
+    color: #768191;
+
+}
+
+.SidebarLink span {
+    margin-left: 22px;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: left;
+    color: #768191;
+
+}

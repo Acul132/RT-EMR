@@ -1,0 +1,19 @@
+{
+  "name": "import-meds",
+  "version": "1.0.0",
+  "description": "Import all medications from health api",
+  "main": "medicationImportChunk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Renelli",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "cli-progress": "^3.4.0",
+    "colors": "^1.4.0",
+    "request": "^2.88.0",
+    "request-progress": "^3.0.0",
+    "rethinkdbdash": "^2.3.31"
+  }
+}

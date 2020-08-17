@@ -1,0 +1,114 @@
+.primaryButton {
+    
+    background: #2b50ed;
+    box-shadow: 0px 8px 26px rgba(34, 60, 169, 0.31);
+    color: #fff;
+}
+
+.button {
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0 20px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Fira Sans";
+    position: relative;
+    z-index: 10;
+    outline: none;
+    transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+}
+
+.button div {
+    display: inline;
+    margin-right: 12px;
+}
+
+.secondaryButton {
+    
+    background: #f2f4fb;
+    color: #223ca9;
+
+
+}
+
+.secondaryButton:hover {
+    color: white;
+    background: #2b50ed;
+    box-shadow: 0px 8px 26px rgba(34, 60, 169, 0.31);
+
+}
+
+
+.primaryButton:hover {
+    background: #2644C5;
+}
+
+.Fab {
+    z-index: 20;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 18px;
+    background: #2b50ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 6px 30px #2b50ed70;
+    cursor: pointer;
+    transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Fab:hover {
+    transform: translateY(-2px)
+}
+
+.innerFab > .Fab {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    right: -20px;
+    top: -20px;
+    opacity: 0;
+    transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 19;
+}
+
+
+
+
+.innerFab > .Fab > :first-child {
+    font-size: 20px;
+}
+
+.innerFab {
+    position: absolute;
+}
+
+.MultiFab {
+    z-index: 20;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 18px;
+    background: #2b50ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 6px 30px #2b50ed70;
+    cursor: pointer;
+    transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}

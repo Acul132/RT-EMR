@@ -1,0 +1,54 @@
+stages: 
+  - install
+  - build
+  - deploy
+
+
+cache:
+  paths:
+    - ./node_modules
+    - ./build
+
+install_dependencies: 
+  only: 
+    - master
+  tags:
+    - express 
+  stage: install
+  script: npm install
+
+build_server:
+  only: 
+    - master
+  tags:
+    - express 
+  stage: build
+  script: 
+    - ~/install_server.sh
+
+build_app:
+  only: 
+    - master
+  tags:
+    - express
+  stage: build
+  script:
+    - npm run-script build
+
+deploy_server: 
+  only: 
+    - master
+  tags:
+    - express 
+  stage: deploy
+  script: 
+    - ~/restart_server.sh
+
+deploy_app:
+  only: 
+    - master
+  tags:
+    - express 
+  stage: deploy
+  script: 
+    - ~/install_app.sh

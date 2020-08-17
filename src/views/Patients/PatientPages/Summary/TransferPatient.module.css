@@ -1,0 +1,120 @@
+.background{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000017;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: "Fira Sans";
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 19px;
+    text-align: left;
+    color: #000;
+    margin: 16px 0px 32px 20px;
+}
+
+.selectedWard{
+    margin: 16px 20px 10px 0px;
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 19px;
+    color: #000;
+}
+
+.secondTitle{
+    font-family: "Fira Sans";
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: left;
+    color: #686e79;
+    margin: 0px 0px 0px 40px;
+}
+
+.searchParamsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0px 0px 40px;
+}
+
+.searchParamsContainer > input::placeholder{
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 20px;
+    color: #d7dae0;
+    padding-left: 17px;
+}
+
+.searchParamsContainer > input{
+    width: 251px;
+    height: 34px;
+    border: 1px solid #eceff5;
+    margin-right: 21px;
+}
+
+.searchInputBox{
+    width: 210px;
+    height: 35px;
+    margin-right: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #eceff5;
+    display: flex;
+    align-items: stretch;
+}
+
+.searchIcon{
+    color: #768191;
+    height: 100%;
+}
+
+.searchInput{
+    border: none;
+    margin-left: 5px;
+    flex: 1;
+    justify-content: flex-end;
+    outline: none;
+}
+
+.searchInput::placeholder{
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: left;
+    color: #d7dae0;
+}
+
+.horizontalRule{
+    margin: 20px auto;
+    width: 86%;
+    border: 0.5px solid #9fa9ba;
+}
+
+.tableContainer{
+    margin: 0px auto 20px auto;
+    width: 86%;
+    height: calc(100vh - 440px);
+}
+
+.dosageInformation{
+
+    width: 100%;
+}

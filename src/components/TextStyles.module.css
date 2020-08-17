@@ -1,0 +1,29 @@
+.header4 {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #768191;
+
+}
+
+.cardHeader {
+    font-family: "Fira Sans";
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 14px;
+    text-align: left;
+    color: #1e1f22;
+
+}
+
+.tableHeader {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #9fa9ba;
+
+}

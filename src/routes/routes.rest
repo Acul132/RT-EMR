@@ -1,0 +1,83 @@
+@jwt = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik1VWTRSRE5DUVRCRk9UZ3dNRGxDUlVVd1F6ZEVSVFpHUTBVd01UZ3lOalV3TkVRMVJFUkJNUSJ9.eyJpc3MiOiJodHRwczovL25pY29sYXN2ZW5uZS5hdXRoMC5jb20vIiwic3ViIjoiUmpwSW03T1hkbmxLOHVrb2pKV1I5c2ZTNFkycHBiT3BAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vYXBpLm5pY29sYXN2ZW5uZS5jYSIsImlhdCI6MTU3NDkxODk2MCwiZXhwIjoxNTc1MDA1MzYwLCJhenAiOiJSanBJbTdPWGRubEs4dWtvakpXUjlzZlM0WTJwcGJPcCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.Rcx1B7PjeBX6kWGODM97n5oc2ie0EfVkvx2daEjGLCniKMWkduixM7Y5Ao-ONUCQ6eWpdgj4e42K2vo7oFPga9GMnBUNojMhSSpZJRdikR65F7nZwrQbB-kJhTLH9mSC3U2jHIz9dM72mXM0aEFHUMLJtrn3ySuGVRPRIG9IoiKZosMIcPOzRREm0H5QgU5HCJS4mXhtC6r5qlMvE_APOycwi1JVAAH46AKA2bXF7DV-jlh6hL2_k2WyTnJTJJ8NALq--D6bFC9_PxorlnsNORXo6P6EhJeWt0_hucRYXaPazbrBoAb57JuQCskoPhD7-FJx22VoJ9UXKJRe7LG89Q
+
+
+POST https://nicolasvenne.auth0.com/oauth/token
+content-type: application/json
+
+{
+    "grant_type": "client_credentials",
+    "client_id": "RjpIm7OXdnlK8ukojJWR9sfS4Y2ppbOp",
+    "client_secret": "Agt1Id3TntB5P3ejzg4NECoU4dAVNwPydMETmTRwfzVXO4rJRPmLH4KROLpt3XmQ",
+    "audience": "https://api.nicolasvenne.ca"
+}
+
+###
+
+GET http://localhost:3001/staff/pending/
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+
+{
+    "id": "auth0|5ddc447f902e660faa81eca9",
+    "email": "nicolas.maxvenne@gmail.com",
+    "auth0-extension-secret": "2689b64f0e22e65016a305590bfdbc6a330fa2cc0c19677c55d7fa8bebf42122"
+}
+
+###
+
+GET http://localhost:3001/consults
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+
+{
+    "address": "622 Corsi Hill",
+    "city": "Sudbury",
+    "country": "Canada",
+    "province": "ON",
+    "postal_code": "P3E 0A4"
+}
+
+
+
+
+###
+
+GET http://localhost:3001/admissions/patient/a04c7c4a-fa88-475a-bac1-ae92d9a5a408
+content-type: application/json
+Authorization: Bearer {{jwt}}
+###
+
+GET http://localhost:3001/prescriptions/patient/f4f98a5c-6183-422a-a845-58f24c3a7cc8
+content-type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+    "doctor_id": "007c713c-82f6-4190-a1da-c6598ef2a0d2",
+    "patient_id": "f4f98a5c-6183-422a-a845-58f24c3a7cc8",
+    "medication_id": "004b9209-0375-4f1a-b715-8652642cc162",
+    "daily_quantity": 2,
+    "sig": "T1T BID"
+}
+###
+
+GET http://localhost:3001/medications/search/RABEP HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+    "address": "174 Copper St",
+    "city": "Sudbury",
+    "country": "Canada",
+    "postal_code": "P3E-2C2"
+}
+
+###
+
+GET http://localhost:3001/patients/search/Josh HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{jwt}}
+
+###
+

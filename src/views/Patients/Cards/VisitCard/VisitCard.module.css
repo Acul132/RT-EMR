@@ -1,0 +1,45 @@
+.bedIcon {
+    margin-top: 16px;
+    font-size: 60px;
+    color: #223ca9;
+    filter: drop-shadow(0px 3px 6px rgba(34, 60, 169, 0.16));
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visitText {
+    display: flex;
+    width: 100%;
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    color: #494949;
+    margin-top: 20px;
+
+}
+
+.visitText > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.visitText > div > div {
+    margin-top: 8px;
+}
+
+.visitText > div:first-child {
+    align-items: flex-end;
+    margin-right: 15px;
+}
+
+.visitText > div:last-child {
+    align-items: flex-start;
+    margin-left: 15px;
+}

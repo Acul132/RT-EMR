@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vitalIcon {
+    font-size: 60px;
+    color: #f00;
+    filter: drop-shadow(0px 3px 6px rgba(255, 0, 0, 0.16));
+    margin-top: 16px;
+    animation: innerbeat 1.5s infinite linear forwards;
+
+}
+
+.vitals {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #494949;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    
+
+}
+
+.vitals > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    
+}
+
+.vitals > div:first-child {
+    align-items: flex-end;
+    margin-right: 15px;
+}
+.vitals > div:last-child {
+    align-items: flex-start;
+    margin-left: 15px;
+
+}
+
+.vitals > div:first-child > div:first-child {
+    border-bottom: 2px solid #707070;
+}
+.date {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+    text-align: left;
+    color: #707070;
+    margin-top: 40px
+
+}
+
+@keyframes innerbeat {
+    0% {transform: scale(1);}
+    10% {transform: scale(1);}
+    50% {transform: scale(1.02);}
+    60% {transform: scale(1);}
+    75% {transform: scale(1.05);}
+}

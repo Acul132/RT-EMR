@@ -1,0 +1,75 @@
+.PageHeader {
+    height: 75px;
+    border-radius: 0px 0px 0px 12px;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(228, 231, 235, 0.16);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0; 
+    z-index: 11;
+    margin-bottom: 30px;
+    padding: 0 0 0 40px;
+}
+
+.PageHeader.Tabbed {
+    position: relative;
+    height: 90px;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.icon {
+    font-size: 15px;
+    margin-right: 10px;
+}
+.back {
+    color: #768191;
+    font-size: 21px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.back:hover {
+    color: black;
+}
+
+.back > span {
+    margin-left: 10px;
+}
+
+.Tabbed {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+
+.Title {
+
+    font-family: "Fira Sans";
+    font-weight: normal;
+    font-size: 21px;
+    text-align: left;
+    color: #1e1f22;
+
+}
+
+.isBack .Title {
+    margin-left: 10px;
+}
+
+.Actions {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: inherit;
+    padding-right: 22px;
+    z-index: 7;
+}
+
+.Actions > * {
+    margin: 6px;
+}
+

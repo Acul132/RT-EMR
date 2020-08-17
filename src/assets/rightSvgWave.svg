@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1052.651" height="604.409" viewBox="-45 40 1052.651 604.409">
+  <defs>
+    <style>
+      .cls-1-right {
+        fill: url(#linear-gradient-right);
+      }
+
+      .cls-2-right {
+        filter: url(#Path_2);
+      }
+    </style>
+    <linearGradient id="linear-gradient-right" x1="0.107" y1="0.11" x2="0.976" y2="0.818" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2b50ed"/>
+      <stop offset="1" stop-color="#2644c5"/>
+    </linearGradient>
+    <filter id="Path_2" x="0" y="0" width="1052.651" height="604.409" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#2b50ed" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2-right" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Path_2-2" data-name="Path 2" class="cls-1-right" d="M5903.5,514.84c-145.614-116.489-143.533-378.59-355.709-424.353S5217.047,246.5,5096.4,234.018,4955.611,90.178,4940.85.431H5903.5Z" transform="translate(-4895.85 39.57)"/>
+  </g>
+</svg>
