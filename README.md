@@ -5,10 +5,17 @@ We utilized an MVC architecture for the database collections, and other technolo
 
 ## Sample Screenshots
 List of Patients
+
 ![image of Patients list](https://github.com/Acul132/RT-EMR/blob/master/PatientsList.png)
+
 Patient Profile
+
 ![image of Patient Profile](https://github.com/Acul132/RT-EMR/blob/master/PatientProfile.png)
+
 New Prescription
+
 ![image of New Prescription](https://github.com/Acul132/RT-EMR/blob/master/NewPrescription.png)
+
 List of Patient Medications
+
 ![image of Medication List](https://github.com/Acul132/RT-EMR/blob/master/Medications.png)
